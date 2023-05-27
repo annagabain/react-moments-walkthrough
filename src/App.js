@@ -9,6 +9,7 @@ import PostCreateForm from "./pages/posts/PostCreateForm";
 import PostPage from "./pages/posts/PostPage";
 import PostsPage from "./pages/posts/PostsPage";
 import { useCurrentUser } from "./contexts/CurrentUserContext";
+import PostEditForm from "./pages/posts/PostEditForm";
 
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
         <NavBar />
         <Container className={styles.Main}>
           <Switch>
-            {/* <Route exact path="/" render={() => <h1>Home page</h1>} /> */}
             <Route
             exact
             path="/"
@@ -52,6 +52,7 @@ function App() {
             <Route exact path="/signup" render={() => <SignUpForm />} />
             <Route exact path="/posts/create" render={() => <PostCreateForm/>} />
             <Route exact path="/posts/:id" render={() => <PostPage />} />
+            <Route exact path="/posts/:id/edit" render={() => <PostEditForm />} />
 
 
             <Route render={() => <p>Page not found!</p>} />
