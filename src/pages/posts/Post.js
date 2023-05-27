@@ -34,7 +34,7 @@ const Post = (props) => {
 
   const handleDelete = async () => {
     try {
-      await axiosRes.delete(`/posts/${id}/`);
+      await axiosRes.delete(`/posts/${id}`);
       history.goBack();
     } catch (err) {
       console.log(err);
@@ -84,7 +84,6 @@ const Post = (props) => {
           </Link>
           <div className="d-flex align-items-center">
             <span>{updated_at}</span>
-            {/* {is_owner && postPage && "..."} */}
             {is_owner && postPage && (
               <MoreDropdown
                 handleEdit={handleEdit}
