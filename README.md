@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-live:
+Live:
 
 
 https://react-moments-code-along.herokuapp.com/
