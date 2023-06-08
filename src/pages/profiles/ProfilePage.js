@@ -28,8 +28,6 @@ function ProfilePage() {
   const currentUser = useCurrentUser();
   const { id } = useParams();
 
-  // const setProfileData = useSetProfileData();
-  // const { setProfileData, handleFollow } = useSetProfileData();
   const { setProfileData, handleFollow, handleUnfollow } = useSetProfileData();
   const { pageProfile } = useProfileData();
 
